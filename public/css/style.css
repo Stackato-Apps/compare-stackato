@@ -113,19 +113,3 @@ div.vs_block ul li .version {
     font-size: small;
     color: #999;
 }
-
-#tabs {
-    width: 80%;
-    margin: 40px auto;
-    overflow: auto;
-}
-
-#tabs .compare {
-    float: left;
-    width: 40%;
-}
-
-#tabs .vs {
-    float: left;
-    width: 20%;
-}
