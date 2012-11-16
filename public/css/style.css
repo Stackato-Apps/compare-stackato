@@ -16,6 +16,10 @@ body {
     min-height: 100%;
 }
 
+a {
+    color: #02667E;
+}
+
 h1 {
     text-align: center;
     text-shadow: 1px 1px rgba(0,0,0,.75);
@@ -112,4 +116,18 @@ div.vs_block ul li {
 div.vs_block ul li .version {
     font-size: small;
     color: #999;
+}
+
+div.stackato_info {
+    border-top: 3px solid #7E1B02;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 24px;
+}
+
+div.stackato_info h2 {
+    font-family: ultra, serif;
+    font-weight: normal;
+    font-size: 48px;
+    margin-bottom: 20px;
 }

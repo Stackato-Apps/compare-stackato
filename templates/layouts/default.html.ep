@@ -15,6 +15,7 @@
   <body>
     <div id="content">
       <%= content %>
+      <%= include 'info' %>
     </div>
     <script>
       $(function() {
