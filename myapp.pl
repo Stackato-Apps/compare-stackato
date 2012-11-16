@@ -5,6 +5,8 @@ use Mojo::UserAgent;
 use Mojo::Util;
 use JSON::XS;
 
+use strict;
+
 # Documentation browser under "/perldoc"
 plugin 'PODRenderer';
 
@@ -14,6 +16,11 @@ push @{$static->paths}, 'css';
 get '/' => sub {
   my $self = shift;
   $self->render('compare');
+};
+
+get '/endpoint-details' => sub {
+  my $self = shift;
+  $self->redirect_to('/');
 };
 
 post '/endpoint-details' => sub {
