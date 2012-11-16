@@ -1,0 +1,7 @@
+<form action="/endpoint-details" method="POST" id="compare_form">
+    <div class="ui-widget">
+        <label>Choose your poison:</label>
+        <input id="api_endpoint" name="api_endpoint" type="text" class="required complete_url">
+        <input name="submit" type="submit" value="Go!">
+    </div>
+</form>

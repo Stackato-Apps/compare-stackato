@@ -1,0 +1,131 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    background-color: #00343F;
+    color: #222;
+    font-family: Helvetica, arial, sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    background-color: #fff;
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px rgba(0,0,0,.75);
+    color: #0289ab;
+    display: block;
+    width: 100%;
+    font-family: ultra, serif;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+form {
+    text-align: center;
+    background-color: #7E1B02;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 24px;
+    position: relative;
+}
+
+form label.error {
+    font-size: 12px;
+    left: 416px;
+    position: absolute;
+    top: 85px;
+}
+
+div.api_error {
+    font-size: 24px;
+    padding: 40px;
+    text-align: center;
+}
+
+div.vs_block {
+    padding: 40px;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+div.vs_block #vs {
+    position: absolute;
+    top: 50%;
+    left: 462px;
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    border: 3px solid #222;
+    background-color: #02667E;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+div.vs_block .vs_block_compare {
+    float: left;
+    width: 50%;
+    padding: 10px 60px;
+}
+
+div.vs_block .vs_block_compare.last {
+    border-left: 4px solid #222;
+}
+
+div.vs_block h2 {
+    font-family: ultra, serif;
+    font-weight: lighter;
+    display: block;
+    width: 100%;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+div.vs_block .vs_block_banner {
+    font-family: ultra, serif;
+    font-size: 60px;
+    text-shadow: 1px 1px rgba(0,0,0,.75);
+    margin: 0 -40px 20px -40px;
+    background-color: #7E1B02;
+    color: #fff;
+}
+
+div.vs_block ul li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+div.vs_block ul li .version {
+    font-size: small;
+    color: #999;
+}
+
+#tabs {
+    width: 80%;
+    margin: 40px auto;
+    overflow: auto;
+}
+
+#tabs .compare {
+    float: left;
+    width: 40%;
+}
+
+#tabs .vs {
+    float: left;
+    width: 20%;
+}

@@ -1,0 +1,94 @@
+% layout 'default';
+% title 'Compare your CF-based PaaS to Stackato';
+<h1>How does your PaaS stack up to Stackato?</h1>
+
+%= include 'compare_form'
+
+<div class="vs_block" id="summary">
+  <div class="vs_block_compare">
+    <h2>Stackato</h2>
+    <div class="vs_details">
+      <%= keys $s_runtimes %> Runtimes
+    </div>
+    <div class="vs_details">
+      <%= @$s_frameworks %> Application Frameworks
+    </div>
+    <div class="vs_details">
+      <%= keys $s_services %> Services
+    </div>
+  </div>
+  
+  <div class="vs_block_compare last">
+    <h2><%= $paas_name %></h2>
+      <div class="vs_details">
+      <%= keys $runtimes %> Runtimes
+    </div>
+    
+    <div class="vs_details">
+      <%= @$frameworks %> Application Frameworks
+    </div>
+    
+    <div class="vs_details">
+      <%= keys $services %> Services
+    </div>
+  </div>
+  <div id="vs">vs</div>
+  
+</div>
+
+<div class="vs_block" id="runtimes">
+  <div class="vs_block_banner">Runtimes</div>
+  <div class="vs_block_compare">
+    <ul>
+        % foreach my $fw ( sort(keys $s_runtimes) ) {
+        <li><%= $s_runtimes->{$fw}->{'description'} %> <span class="version">(v.<%= $s_runtimes->{$fw}->{'version'} %>)</span></li>
+        % }
+    </ul>
+  </div>
+  <div class="vs_block_compare last">
+    <ul>
+        % foreach my $fw ( sort(keys $runtimes) ) {
+        <li><%= $runtimes->{$fw}->{'description'} %> <span class="version">(v.<%= $runtimes->{$fw}->{'version'} %>)</span></li>
+        % }
+    </ul>
+  </div>
+  <div id="vs">vs</div>
+</div>
+
+<div class="vs_block" id="frameworks">
+  <div class="vs_block_banner">Frameworks</div>
+  <div class="vs_block_compare">
+    <ul>
+        % foreach my $key (@$s_frameworks) {
+        <li><%= $key %></li>
+        % }
+    </ul>
+  </div>
+  <div class="vs_block_compare last">
+    <ul>
+        % foreach my $key (@$frameworks) {
+        <li><%= $key %></li>
+        % }
+    </ul>
+  </div>
+  <div id="vs">vs</div>
+</div>
+
+<div class="vs_block" id="services">
+  <div class="vs_block_banner">Services</div>
+  <div class="vs_block_compare">
+    <ul>
+        % foreach my $key (sort(keys $s_services)) {
+        <li><%= $key %> <span class="version">(versions: <%= join(', ', keys $s_services->{$key}) %>)</span></li>
+        % }
+    </ul>
+  </div>
+  <div class="vs_block_compare last">
+    <ul>
+        % foreach my $key (sort(keys $services)) {
+        <li><%= $key %> <span class="version">(versions: <%= join(', ', keys $services->{$key}) %>)</span></li>
+        % }
+    </ul>
+  </div>
+  <div id="vs">vs</div>
+</div>

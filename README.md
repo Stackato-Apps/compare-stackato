@@ -1,0 +1,1 @@
+A simple Mojolicious app that uses the newly public /info and /info/services APIs in core Cloud Foundry to compare runtimes, frameworks and services to those offered by ActiveState's Stackato.

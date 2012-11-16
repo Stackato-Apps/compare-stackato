@@ -1,0 +1,9 @@
+% layout 'default';
+% title 'Compare Stackato';
+<h1>How does your PaaS stack up to Stackato?</h1>
+
+%= include 'compare_form'
+
+<div class="api_error">
+  Sorry, the API request to <%= $api_endpoint %> failed.
+</div>
