@@ -1,6 +1,5 @@
 % layout 'default';
 % title 'Compare your CF-based PaaS to Stackato';
-<h1>How does your PaaS stack up to Stackato?</h1>
 
 %= include 'compare_form'
 

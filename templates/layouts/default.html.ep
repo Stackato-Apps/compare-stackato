@@ -14,6 +14,7 @@
   </head>
   <body>
     <div id="content">
+      <h1>How does your Cloud Foundry PaaS stack up to Stackato?</h1>
       <%= content %>
       <%= include 'info' %>
     </div>
@@ -66,7 +67,7 @@
             }
           });
           
-          $('h1').fitText();
+          $('h1').fitText(1.4, { minFontSize: '20px', maxFontSize: '80px' });
           $('div.vs_block h2').fitText();
           
           $('#summary .vs_block_compare').equalHeights();
