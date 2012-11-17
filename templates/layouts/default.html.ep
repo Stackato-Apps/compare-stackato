@@ -50,6 +50,15 @@
           $( "#api_endpoint" ).autocomplete({
               source: availableAPIs
           });
+
+          $('#help_content').dialog({
+            autoOpen: false,
+            modal: true
+          });
+
+          $('#help').click(function() {
+            $('#help_content').dialog('open');
+          });
           
           $('#compare_form').validate({
             rules: {

@@ -1,7 +1,10 @@
 <form action="/endpoint-details" method="POST" id="compare_form">
     <div class="ui-widget">
-        <label>Choose your poison:</label>
+        <label><a href="#" id="help">?</a>Enter API endpoint:</label>
         <input id="api_endpoint" placeholder="Eg: api.cloudfoundry.com" name="api_endpoint" type="text" class="required complete_url">
         <input name="submit" type="submit" value="Go!">
     </div>
 </form>
+<div id="help_content" title="What's an API endpoint?">
+    Every Cloud Foundry-based PaaS has an API endpoint URL (e.g. api.stacka.to) which it uses for handling client connections and listing its capabilities.
+</div>

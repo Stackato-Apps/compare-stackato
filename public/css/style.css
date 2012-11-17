@@ -43,9 +43,28 @@ form {
 
 form label.error {
     font-size: 12px;
-    left: 416px;
+    left: 410px;
     position: absolute;
     top: 85px;
+}
+
+form input[type=text] {
+    width: 363px;
+}
+
+form #help {
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 50% 50% 50% 50%;
+    line-height: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 div.api_error {
