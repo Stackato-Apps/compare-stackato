@@ -61,6 +61,16 @@
             $('#help_content').dialog('open');
           });
           
+          $('#buildpack_info').dialog({
+            autoOpen: false,
+            modal: true
+          });
+
+          $('#buildpack').click(function(e) {
+            e.preventDefault();
+            $('#buildpack_info').dialog('open');
+          });
+
           $('#compare_form').validate({
             rules: {
               url: "complete_url"

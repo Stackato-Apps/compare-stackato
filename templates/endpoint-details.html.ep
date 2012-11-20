@@ -59,7 +59,13 @@
   <div class="vs_block_compare">
     <ul>
         % foreach my $key (@$s_frameworks) {
-        <li><%= $key %></li>
+        <li>
+          <%= $key %>
+          % if ($key =~ /buildpack/) {
+          <br>
+          <span class="note"><a href='' id='buildpack'>What are buildpacks?</a></span>
+          % }
+        </li>
         % }
     </ul>
   </div>
@@ -90,4 +96,8 @@
     </ul>
   </div>
   <div id="vs">vs</div>
+</div>
+
+<div id="buildpack_info">
+  Stackato allows you to write custom frameworks by way of your own buildpacks. For a short introduction to writing buildpacks, see <a target="_new" href="http://talks.codegram.com/heroku-buildpacks">this presentation</a>.
 </div>

@@ -132,9 +132,15 @@ div.vs_block ul li {
     line-height: 1.5;
 }
 
-div.vs_block ul li .version {
+div.vs_block ul li .version,
+div.vs_block ul li .note {
     font-size: small;
     color: #999;
+}
+
+div.vs_block ul li .note {
+    display: block;
+    margin-top: -7px;
 }
 
 div.stackato_info {
