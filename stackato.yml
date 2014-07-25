@@ -1,8 +1,3 @@
 name: compare-stackato
 mem: 64M
-framework: perl
-
-requirements:
-  ppm:
-    - mojolicious
-    - JSON-XS
+buildpack: https://github.com/ActiveState/stackato-buildpack-perl.git
